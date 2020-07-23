@@ -5,7 +5,12 @@ namespace Learning.Data
 {
     public class MockCommanderRepo : ICommanderRepo
     {
-        public IEnumerable<Command> GetAppCommands()
+        public void CreateCommand(Command command)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public IEnumerable<Command> GetAllCommands()
         {
             var commands = new List<Command>
             {
@@ -19,6 +24,11 @@ namespace Learning.Data
         public Command GetCommandById(int id)
         {
             return new Command() { Id = 0, HowTo = "Boil an egg", Line = "Boild water", Platform = "Kettle & Pan" };
+        }
+
+        public bool SaveChanges()
+        {
+            throw new System.NotImplementedException();
         }
     }
 }
