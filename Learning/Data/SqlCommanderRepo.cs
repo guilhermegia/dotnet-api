@@ -24,6 +24,16 @@ namespace Learning.Data
             _context.Commands.Add(command);
         }
 
+        public void DeleteCommand(Command command)
+        {
+            if (command is null)
+            {
+                throw new ArgumentNullException();
+            }
+            
+            _context.Commands.Remove(command);
+        }
+
         public IEnumerable<Command> GetAllCommands()
         {
             return _context.Commands.ToList();
@@ -37,6 +47,11 @@ namespace Learning.Data
         public bool SaveChanges()
         {
             return (_context.SaveChanges() >= 0);
+        }
+
+        public void UpdateCommand(Command command)
+        {
+            // Nothing
         }
     }
 }

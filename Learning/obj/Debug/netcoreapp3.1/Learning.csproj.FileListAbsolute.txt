@@ -54,3 +54,7 @@ C:\Users\Giacomin\Desktop\.Net API\dotnet-api\Learning\bin\Debug\netcoreapp3.1\r
 C:\Users\Giacomin\Desktop\.Net API\dotnet-api\Learning\obj\Debug\netcoreapp3.1\Learning.csproj.CopyComplete
 C:\Users\Giacomin\Desktop\.Net API\dotnet-api\Learning\bin\Debug\netcoreapp3.1\AutoMapper.dll
 C:\Users\Giacomin\Desktop\.Net API\dotnet-api\Learning\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Giacomin\Desktop\.Net API\dotnet-api\Learning\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Giacomin\Desktop\.Net API\dotnet-api\Learning\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\Giacomin\Desktop\.Net API\dotnet-api\Learning\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Giacomin\Desktop\.Net API\dotnet-api\Learning\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
