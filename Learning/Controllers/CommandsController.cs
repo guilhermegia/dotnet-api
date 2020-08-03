@@ -1,8 +1,12 @@
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using AutoMapper;
 using Learning.Data;
 using Learning.Dtos;
+using Learning.Mediators.Commands.CreateCommand;
 using Learning.Models;
+using Learning.Queries;
+using MediatR;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 
@@ -14,49 +18,45 @@ namespace Learning.Controllers
     {
         private readonly ICommanderRepo _repository;
         private IMapper _mapper;
+        private readonly IMediator _mediator;
 
-        public CommandsController(ICommanderRepo repository, IMapper mapper)
+        public CommandsController(ICommanderRepo repository, IMapper mapper, IMediator mediator)
         {
             _repository = repository;
             _mapper = mapper;
+            _mediator = mediator;
         }
 
         //GET api/commands
         [HttpGet]
-        public ActionResult<IEnumerable<CommandReadDto>> GetAll()
+        public async Task<ActionResult> GetAll([FromQuery] GetAllCommandsQuery getAllCommandsQuery)
         {
-            var commandItems = _repository.GetAllCommands();
+            var result = await _mediator.Send(getAllCommandsQuery);
 
-            return Ok(_mapper.Map<IEnumerable<CommandReadDto>>(commandItems));
+            return Ok(result);
         }
 
         //GET api/commands/{id}
         [HttpGet("{id:int}", Name = "GetById")]
-        public ActionResult<CommandReadDto> GetById(int id)
+        public async Task<ActionResult> GetById(int id)
         {
-            var commandItem = _repository.GetCommandById(id);
-
-            if (commandItem is null)
+            var result = await _mediator.Send(new GetCommandByIdQuery(id));
+            
+            if (result is null)
             {
                 return NotFound();
             }
 
-            return Ok(_mapper.Map<CommandReadDto>(commandItem));
+            return Ok(result);
         }
 
         //POST api/commands
         [HttpPost]
-        public ActionResult<CommandReadDto> Create(CommandCreateDto commandCreateDto)
+        public async Task<ActionResult<CommandReadDto>> Create(CommandCreateDto commandCreateDto)
         {
-            var commandModel = _mapper.Map<Command>(commandCreateDto);
+            var result = await _mediator.Send(new CreateCommandCommand(commandCreateDto));
 
-            _repository.CreateCommand(commandModel);
-
-            _repository.SaveChanges();
-
-            var commandReadDto = _mapper.Map<CommandReadDto>(commandModel);
-
-            return CreatedAtRoute(nameof(GetById), new { Id = commandReadDto.Id }, commandReadDto);
+            return CreatedAtRoute(nameof(GetById), new { Id = result.Id }, result);
         }
 
         //PUT api/commands/{id}

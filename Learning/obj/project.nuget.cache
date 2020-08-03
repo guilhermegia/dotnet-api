@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "nG8fflyJNevxaKjsNzF4E+/uF4LGnP5+7FxNhznDFSeRqe37DCl4eJjB7+b/Ucgqjv1gChSz3L8h9eMQRGOKKw==",
+  "dgSpecHash": "F2pswuohmlwFvb5uwVZGkS9VV8IDIkJassEyAJQfEQJGUUf91Ywu4gd7rPO48zB9vIRIUmUYWApfSLZWb8Weng==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Giacomin\\Desktop\\.Net API\\dotnet-api\\Learning\\Learning.csproj",
+  "projectFilePath": "C:\\Users\\Giacomin\\Desktop\\Projects\\Codes\\BW_ASPNET-API\\dotnet-api\\Learning\\Learning.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Giacomin\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
     "C:\\Users\\Giacomin\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.0.1\\automapper.extensions.microsoft.dependencyinjection.8.0.1.nupkg.sha512",
+    "C:\\Users\\Giacomin\\.nuget\\packages\\mediatr\\8.1.0\\mediatr.8.1.0.nupkg.sha512",
+    "C:\\Users\\Giacomin\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\8.1.0\\mediatr.extensions.microsoft.dependencyinjection.8.1.0.nupkg.sha512",
     "C:\\Users\\Giacomin\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.1.6\\microsoft.aspnetcore.jsonpatch.3.1.6.nupkg.sha512",
     "C:\\Users\\Giacomin\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\3.1.6\\microsoft.aspnetcore.mvc.newtonsoftjson.3.1.6.nupkg.sha512",
     "C:\\Users\\Giacomin\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",

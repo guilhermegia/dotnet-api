@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Giacomin\\Desktop\\.Net API\\dotnet-api\\Learning\\Learning.csproj": {}
+    "C:\\Users\\Giacomin\\Desktop\\Projects\\Codes\\BW_ASPNET-API\\dotnet-api\\Learning\\Learning.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Giacomin\\Desktop\\.Net API\\dotnet-api\\Learning\\Learning.csproj": {
+    "C:\\Users\\Giacomin\\Desktop\\Projects\\Codes\\BW_ASPNET-API\\dotnet-api\\Learning\\Learning.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Giacomin\\Desktop\\.Net API\\dotnet-api\\Learning\\Learning.csproj",
+        "projectUniqueName": "C:\\Users\\Giacomin\\Desktop\\Projects\\Codes\\BW_ASPNET-API\\dotnet-api\\Learning\\Learning.csproj",
         "projectName": "Learning",
-        "projectPath": "C:\\Users\\Giacomin\\Desktop\\.Net API\\dotnet-api\\Learning\\Learning.csproj",
+        "projectPath": "C:\\Users\\Giacomin\\Desktop\\Projects\\Codes\\BW_ASPNET-API\\dotnet-api\\Learning\\Learning.csproj",
         "packagesPath": "C:\\Users\\Giacomin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Giacomin\\Desktop\\.Net API\\dotnet-api\\Learning\\obj\\",
+        "outputPath": "C:\\Users\\Giacomin\\Desktop\\Projects\\Codes\\BW_ASPNET-API\\dotnet-api\\Learning\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Giacomin\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -39,6 +39,14 @@
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[8.0.1, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.1.0, )"
             },
             "Microsoft.AspNetCore.JsonPatch": {
               "target": "Package",
