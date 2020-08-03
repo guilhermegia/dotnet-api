@@ -4,6 +4,6 @@ Learning about  .NET Core 3.1 MVC REST API.
 ## author
 @eusougz
 
-## font
-https://www.youtube.com/watch?v=fmvcAzHpsk8
-https://www.youtube.com/watch?v=YzOBrVlthMk
+## fonts
+[.NET Core 3.1 MVC REST API](https://www.youtube.com/watch?v=fmvcAzHpsk8)
+[Clean ASP.NET Core API using MediatR and CQRS](https://www.youtube.com/watch?v=YzOBrVlthMk)
