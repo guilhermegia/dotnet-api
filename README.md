@@ -5,4 +5,5 @@ Learning about  .NET Core 3.1 MVC REST API.
 @eusougz
 
 ## font
-$`https://www.youtube.com/watch?v=fmvcAzHpsk8`
+https://www.youtube.com/watch?v=fmvcAzHpsk8
+https://www.youtube.com/watch?v=YzOBrVlthMk
